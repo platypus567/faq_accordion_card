@@ -26,4 +26,12 @@ p{
 #headimg{
     width: 200px;
     height: 200px;
+    
+}
+#imgdiv{
+    display: flex;
+    justify-content: center;
+}
+.hidden{
+    display: none;
 }
