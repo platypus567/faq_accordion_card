@@ -8,6 +8,8 @@ html{
 body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Kumbh Sans',sans-serif;
     height: 100%;
 }
@@ -22,6 +24,10 @@ p{
 }
 #maincard{
     background-color: white;
+    width: 300px;
+    height: 700px;
+    border-radius: 25px;
+    margin-bottom: 75px;
 }
 #headimg{
     width: 200px;
@@ -34,4 +40,16 @@ p{
 }
 .hidden{
     display: none;
+}
+.arrowdown{
+    display: inline;
+}
+.dropdowntext{
+    display: inline;
+    font-weight: 400;
+    
+}
+.dropdowndiv{
+    padding:10px 25px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
 }
