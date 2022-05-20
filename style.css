@@ -16,6 +16,7 @@ body{
 h1{
     font-weight: 700;
     text-align: center;
+    padding-top: 100px;
 }
 p{
     font-weight: 400;
@@ -28,15 +29,26 @@ p{
     height: 700px;
     border-radius: 25px;
     margin-bottom: 75px;
+    margin-top: 100px;
+    box-shadow: 0 5px 10px black;
 }
 #headimg{
     width: 200px;
     height: 200px;
-    
+    padding-left: 5px;
+    margin-bottom: 90px;
+}
+#bgmobile{
+    position: absolute;
+    margin-top: 50px;
+    transform: translate(-15px,-5px);
 }
 #imgdiv{
     display: flex;
     justify-content: center;
+    position: absolute;
+    margin-bottom: 400px;
+    flex-direction: column;
 }
 .hidden{
     display: none;
@@ -46,10 +58,69 @@ p{
 }
 .dropdowntext{
     display: inline;
-    font-weight: 400;
+    font-weight: 900;
     
+}
+.dropdowntext:hover{
+    color: hsl(14, 88%, 65%);
 }
 .dropdowndiv{
     padding:10px 25px;
     border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+#bgdesktop{
+    display: none;
+}
+#headimgdesktop{
+    display: none;
+}
+
+@media (min-width: 380px){
+    #headimg{
+        margin-bottom: 300px;
+    }
+    #bgmobile{
+        margin-bottom: 200px;
+    }
+}
+@media (min-width: 800px){
+    #maincard{
+        display: flex;
+        flex-direction: row;
+        width: 800px;
+        height: 400px;
+        justify-content: space-evenly;
+    }
+    h1{
+        padding-top: 10px;
+        margin-top: 0;
+        text-align: left;
+    }
+    #dropdownCol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .dropdowntext{
+        padding-left: 0;
+    }
+    #headimg{
+        display: none;
+    }
+    #bgmobile{
+        display: none;
+    }
+    #bgdesktop{
+        display: inline;
+        width: 600px;
+        height: 450px;
+        transform: translate(-300px,175px);
+    }
+    #headimgdesktop{
+        display: inline;
+        width: 425px;
+        height: 300px;
+        transform: translate(-100px,10px);
+    }
 }

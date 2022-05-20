@@ -13,9 +13,17 @@ for(let i = 0; i < clickable.length; i++){
         if(flag == false){
             for(let i = 0; i < hidden.length;i++){
                 hidden[i].style.display = 'none';
+                arrowDowns[i].style.transform = "initial";
             }
             hidden[i].style.display = 'block';
-            dropdownText[i].style.fontWeight = "900";
+            arrowDowns[i].style.transform = "rotate(180deg)"
+            flag = true;
+            console.log(flag)
+        } else{
+            arrowDowns[i].style.transform = "initial";
+            hidden[i].style.display = 'none';
+            flag = false;
+            console.log(flag);
         }
         
     })
